@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+</head>
+
+<body>
+	<button id="button" type="button" class="btn btn-primary">button</button>
+	<h1 id="text"></h1>
+
+	<script>
+		const button = document.getElementById("button");
+		const text = document.getElementById("text");
+
+		button.addEventListener("click", () => {
+			text.innerText = greetingService.getGreetings("crisado");
+		});
+	</script>
+</body>
+
+</html>
